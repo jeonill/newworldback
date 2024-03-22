@@ -13,12 +13,8 @@ import java.util.List;
  * 게시판 관련
  */
 public interface PostService {
-    /**
-     * 게사판 불러오기
-     * @param pageable
-     * @return
-     */
-    List<PostDto> getAllPost(Pageable pageable);
+
+    List<PostDto> getAllPost();
     public PostDto getPost(PostDto postDto) throws CustomError;
     public PostDto makePost(PostDto postDto) throws CustomError;
     public PostDto changePost(PostDto postDto);
